@@ -1,0 +1,19 @@
+{
+  "name": "@adistripe/api",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:init": "bun run src/services/db.ts"
+  },
+  "dependencies": {
+    "hono": "^4.4.0",
+    "viem": "^2.17.0",
+    "qrcode": "^1.5.3"
+  },
+  "devDependencies": {
+    "@types/qrcode": "^1.5.5",
+    "typescript": "^5.4.0"
+  }
+}

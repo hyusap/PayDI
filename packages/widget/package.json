@@ -1,0 +1,60 @@
+{
+  "name": "paydi-widget",
+  "version": "0.1.1",
+  "description": "PayDI embeddable checkout widget for ADI Chain payments",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/PayDIWidget.js",
+  "module": "./dist/PayDIWidget.js",
+  "types": "./dist/PayDIWidget.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/PayDIWidget.d.ts",
+      "import": "./dist/PayDIWidget.js"
+    },
+    "./react": {
+      "types": "./dist/PayDIWidget.d.ts",
+      "import": "./dist/PayDIWidget.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.build.json",
+    "build:watch": "tsc -p tsconfig.build.json --watch",
+    "prepublishOnly": "bun run build"
+  },
+  "keywords": [
+    "paydi",
+    "adi",
+    "crypto",
+    "payments",
+    "checkout",
+    "widget"
+  ],
+  "peerDependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.10",
+    "@tanstack/react-query": "^5.90.21",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "viem": "^2.17.0",
+    "wagmi": "^3.5.0"
+  },
+  "devDependencies": {
+    "@rainbow-me/rainbowkit": "^2.2.10",
+    "@tanstack/react-query": "^5.90.21",
+    "@types/react": "^19.2.14",
+    "@types/react-dom": "^19.2.3",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "typescript": "^5.4.0",
+    "viem": "^2.17.0",
+    "wagmi": "^3.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

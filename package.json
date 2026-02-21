@@ -8,9 +8,9 @@
   "scripts": {
     "build:widget": "bun run --cwd packages/widget build",
     "build:dashboard": "bun run --cwd packages/dashboard build",
-    "build:cli": "bun run --cwd packages/cli build",
     "dev:api": "bun run --cwd packages/api dev",
     "dev:dashboard": "bun run --cwd packages/dashboard dev",
+    "dev:testsite": "bun run --cwd packages/testsite dev",
     "test:contracts": "cd packages/contracts && forge test"
   },
   "devDependencies": {
