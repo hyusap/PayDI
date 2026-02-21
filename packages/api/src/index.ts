@@ -18,7 +18,7 @@ app.use("*", secureHeaders());
 app.use(
   "*",
   cors({
-    origin: (process.env.CORS_ORIGINS ?? "*").split(","),
+    origin: "*",
     allowMethods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
     allowHeaders: ["Content-Type", "Authorization", "X-API-Key"],
   })
