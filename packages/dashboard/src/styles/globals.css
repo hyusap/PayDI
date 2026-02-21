@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 220 50% 98%;
+    --foreground: 221 39% 11%;
+    --card: 0 0% 100%;
+    --card-foreground: 221 39% 11%;
+    --primary: 222 89% 56%;
+    --primary-foreground: 210 40% 98%;
+    --muted: 220 20% 95%;
+    --muted-foreground: 222 14% 44%;
+    --accent: 219 67% 96%;
+    --accent-foreground: 222 47% 11%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 220 27% 90%;
+    --input: 220 27% 90%;
+    --ring: 222 89% 56%;
+    --radius: 0.8rem;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html,
+  body {
+    @apply m-0 min-h-screen bg-background text-foreground antialiased;
+    font-family: "Geist", sans-serif;
+  }
+}
