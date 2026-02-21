@@ -4,7 +4,7 @@ WORKDIR /app
 COPY package.json bun.lock ./
 COPY packages/api/package.json ./packages/api/package.json
 
-RUN bun install --frozen-lockfile --production
+RUN bun install --production --no-frozen-lockfile
 
 FROM oven/bun:1 AS runtime
 WORKDIR /app/packages/api
