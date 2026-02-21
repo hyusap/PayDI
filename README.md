@@ -1,4 +1,4 @@
-# AdiPay
+# PayDI
 
 Stripe-like payment stack for ADI Chain. Price in fiat (AED/USD), settle in ADI on-chain.
 

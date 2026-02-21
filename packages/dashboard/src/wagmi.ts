@@ -56,6 +56,6 @@ export const config = getDefaultConfig({
   projectId:
     process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID ??
     "13023ac06bb20e4b24b1dd3cc0d248bb",
-  chains: [adiLocal, adiTestnet, adiMainnet],
+  chains: [adiTestnet, adiMainnet, adiLocal],
   ssr: true,
 });

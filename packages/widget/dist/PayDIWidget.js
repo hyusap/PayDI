@@ -11,7 +11,7 @@ import { AdiPayCheckout } from "./AdiPayCheckout";
 const DEFAULT_PROJECT_ID = "13023ac06bb20e4b24b1dd3cc0d248bb";
 function createWidgetConfig(projectId) {
     return createConfig({
-        chains: [adiLocal, adiTestnet, adiMainnet],
+        chains: [adiTestnet, adiMainnet, adiLocal],
         connectors: [injected(), walletConnect({ projectId })],
         transports: {
             [adiLocal.id]: http(),
