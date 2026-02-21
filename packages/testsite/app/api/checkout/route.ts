@@ -12,7 +12,7 @@ export async function POST(req: Request) {
 
   if (!apiKey) {
     return NextResponse.json(
-      { error: "ADIPAY_API_KEY not set in .env.local" },
+      { error: "ADIPAY_API_KEY (PayDI API key) not set in .env.local" },
       { status: 500 }
     );
   }
@@ -31,7 +31,7 @@ export async function POST(req: Request) {
 
   const data = await res.json();
   if (!res.ok) {
-    return NextResponse.json({ error: data.error ?? "AdiPay API error" }, { status: 502 });
+    return NextResponse.json({ error: data.error ?? "PayDI API error" }, { status: 502 });
   }
 
   return NextResponse.json({

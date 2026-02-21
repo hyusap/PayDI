@@ -8,29 +8,29 @@ export interface Product {
 
 export const PRODUCTS: Record<string, Product> = {
   "adi-tee": {
-    name: "ADI Chain T-Shirt",
-    price: 25,
+    name: "PayDI T-Shirt",
+    price: 0.1,
     currency: "USD",
     emoji: "👕",
     description: "100% cotton, GPU-powered comfort",
   },
   "adi-hoodie": {
-    name: "ADI Foundation Hoodie",
-    price: 65,
+    name: "PayDI Hoodie",
+    price: 0.2,
     currency: "USD",
     emoji: "🧥",
     description: "Stay warm while your validator runs",
   },
   "sticker-pack": {
-    name: "Developer Sticker Pack",
-    price: 5,
+    name: "PayDI Sticker Pack",
+    price: 0.05,
     currency: "USD",
     emoji: "🎨",
     description: "12 stickers for your laptop",
   },
   "adi-cap": {
-    name: "ADI Chain Cap",
-    price: 30,
+    name: "PayDI Cap",
+    price: 0.08,
     currency: "USD",
     emoji: "🧢",
     description: "Structured fit, embroidered logo",

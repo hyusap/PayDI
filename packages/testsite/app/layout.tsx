@@ -3,8 +3,8 @@ import "@rainbow-me/rainbowkit/styles.css";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "ADI Store — Powered by AdiPay",
-  description: "Demo store for AdiPay widget",
+  title: "PayDI Test Store",
+  description: "Demo storefront for PayDI widget integration",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
