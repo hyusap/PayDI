@@ -1,0 +1,17 @@
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib"]
+test = "test"
+script = "script"
+solc_version = "0.8.24"
+optimizer = true
+optimizer_runs = 200
+
+[rpc_endpoints]
+testnet = "https://rpc.ab.testnet.adifoundation.ai/"
+mainnet = "https://rpc.adifoundation.ai/"
+
+[etherscan]
+testnet = { key = "${ETHERSCAN_API_KEY}", url = "https://explorer.ab.testnet.adifoundation.ai/api" }
+mainnet = { key = "${ETHERSCAN_API_KEY}", url = "https://explorer.adifoundation.ai/api" }

@@ -1,0 +1,19 @@
+{
+  "name": "adistripe",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "build:widget": "bun run --cwd packages/widget build",
+    "build:dashboard": "bun run --cwd packages/dashboard build",
+    "build:cli": "bun run --cwd packages/cli build",
+    "dev:api": "bun run --cwd packages/api dev",
+    "dev:dashboard": "bun run --cwd packages/dashboard dev",
+    "test:contracts": "cd packages/contracts && forge test"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
