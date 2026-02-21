@@ -2,6 +2,11 @@
 
 Stripe-like payment stack for ADI Chain. Price in fiat (AED/USD), settle in ADI on-chain.
 
+## Live apps
+
+- **Hosted PayDI app (main):** https://paydi.vercel.app/
+- **Example PayDI app (test store):** https://paydi-test.vercel.app/
+
 ## Monorepo packages
 
 ```

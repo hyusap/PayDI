@@ -65,6 +65,24 @@ const HomePage: NextPage = () => {
             </p>
 
             <div className="mt-8 flex flex-wrap items-center justify-center gap-3">
+              <a
+                href="https://paydi.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-12 items-center gap-2 rounded border border-[#eeeeee] bg-white px-5 text-[15px] text-black/80"
+              >
+                Hosted PayDI
+                <ExternalLink className="size-4" />
+              </a>
+              <a
+                href="https://paydi-test.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-12 items-center gap-2 rounded border border-[#eeeeee] bg-white px-5 text-[15px] text-black/80"
+              >
+                Example PayDI app
+                <ExternalLink className="size-4" />
+              </a>
               <Link
                 href="/dashboard"
                 className="inline-flex h-12 items-center gap-2 rounded border border-[#003cff1a] bg-[#003cff0d] px-5 text-[15px] text-[#003cff]"

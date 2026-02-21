@@ -23,6 +23,24 @@ export default function Home() {
             Test checkout flows with <span className="text-[#003cff]">ultra-low prices</span>
           </h1>
           <p className="text-black/55">Same PayDI integration, tuned for fast local testing and retries.</p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-3">
+            <a
+              href="https://paydi.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-11 items-center gap-2 rounded border border-[#003cff1a] bg-[#003cff0d] px-4 text-[14px] text-[#003cff]"
+            >
+              Go to main PayDI app
+            </a>
+            <a
+              href="https://paydi-test.vercel.app/"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-11 items-center gap-2 rounded border border-[#eeeeee] bg-white px-4 text-[14px] text-black/80"
+            >
+              Hosted example store
+            </a>
+          </div>
         </div>
 
         <ProductGrid />
