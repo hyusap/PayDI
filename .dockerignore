@@ -1,0 +1,11 @@
+**/node_modules
+**/.env
+**/.env.*
+.git
+.gitignore
+packages/contracts/out
+packages/contracts/cache
+packages/contracts/broadcast
+packages/api/adipay.db
+packages/api/adipay.db-shm
+packages/api/adipay.db-wal

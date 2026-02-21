@@ -1,0 +1,19 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: packages/api/Dockerfile
+    container_name: adistripe-api
+    restart: unless-stopped
+    env_file:
+      - ./packages/api/.env
+    environment:
+      PORT: "3000"
+      DB_PATH: /data/adipay.db
+    ports:
+      - "3000:3000"
+    volumes:
+      - api_data:/data
+
+volumes:
+  api_data:
