@@ -6,15 +6,14 @@ import { WagmiProvider, createConfig, http } from "wagmi";
 import { injected, walletConnect } from "wagmi/connectors";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { RainbowKitProvider, darkTheme, lightTheme } from "@rainbow-me/rainbowkit";
-import { adiLocal, adiTestnet, adiMainnet } from "./chains";
+import { adiTestnet, adiMainnet } from "./chains";
 import { AdiPayCheckout } from "./AdiPayCheckout";
 const DEFAULT_PROJECT_ID = "13023ac06bb20e4b24b1dd3cc0d248bb";
 function createWidgetConfig(projectId) {
     return createConfig({
-        chains: [adiTestnet, adiMainnet, adiLocal],
+        chains: [adiTestnet, adiMainnet],
         connectors: [injected(), walletConnect({ projectId })],
         transports: {
-            [adiLocal.id]: http(),
             [adiTestnet.id]: http(),
             [adiMainnet.id]: http(),
         },
