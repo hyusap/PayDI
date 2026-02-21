@@ -1,15 +1,13 @@
 FROM oven/bun:1 AS deps
-WORKDIR /app
+WORKDIR /app/packages/api
 
-COPY package.json bun.lock ./
-COPY packages/api/package.json ./packages/api/package.json
+COPY packages/api/package.json ./package.json
 
-RUN bun install --production --no-frozen-lockfile
+RUN bun install --production
 
 FROM oven/bun:1 AS runtime
 WORKDIR /app/packages/api
 
-COPY --from=deps /app/node_modules /app/node_modules
 COPY --from=deps /app/packages/api/node_modules ./node_modules
 COPY packages/api/package.json ./package.json
 COPY packages/api/src ./src
